@@ -115,6 +115,7 @@ void init_simulation(int np) {
   mutex_init(&hd->access, NULL);
   for (int i = 0; i < np; i++)
     cond_init(&hd->patients_conds[i], NULL);
+
 }
 
 /* ************************************************* */
